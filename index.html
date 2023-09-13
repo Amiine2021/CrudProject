@@ -16,11 +16,11 @@
         <div class="input">
             <input type="text" placeholder="title" id="title">
             <div class="price">
-                <input type="number"  placeholder="price" id="price">
-                <input type="number"  placeholder="taxes" id="taxes" >
-                <input type="number"  placeholder="ads" id="ads">
-                <input type="number"  placeholder="discount" id="discount" >
-                <small class="total">333</small>
+                <input type="number" onkeyup=" getTotal()"  placeholder="price" id="price">
+                <input type="number"   onkeyup=" getTotal()"   placeholder="taxes" id="taxes" >
+                <input type="number"  onkeyup=" getTotal()"   placeholder="ads" id="ads">
+                <input type="number"  onkeyup=" getTotal()"   placeholder="discount" id="discount" >
+                <small class="total" id="total" ></small>
             </div>
         </div>
         <input type="number"  placeholder="count" id="count">
@@ -48,9 +48,24 @@
                 <th>ads</th>
                 <th>discount</th>
                 <th>category</th>
+                <th>total</th>
                 <th>update</th>
                 <th>delete</th>
             </tr>
+            <tbody>
+                <tr>
+                <td>1</td>
+                <td>iphone</td>
+                <td>2100</td>
+                <td>20</td>
+                <td>5</td>
+                <td>10</td>
+                <td>phon</td>
+                <td>2100</td>
+                <td><button class="update">update</button></td>
+                <td><button class="delete">delete</button></td>
+                </tr>
+            </tbody>
         </table>
 
     </div>
